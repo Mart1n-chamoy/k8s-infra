@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: web-static-pv
+  name: website-pv
 spec:
   capacity:
     storage: 1Gi
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteOnce
   hostPath:
-    path: /home/Mart1n chamoy/static-website
+    path: /mnt/web
