@@ -8,4 +8,4 @@ spec:
   accessModes:
     - ReadOnlyMany
   hostPath:
-    path: /home/Mart1 chamoy/static-website
+    path: /home/Mart1n chamoy/static-website
