@@ -1,20 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-static-deployment
+  name: website-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web-static
+      app: website
   template:
     metadata:
       labels:
-        app: web-static
+        app: website
     spec:
       containers:
-        - name: nginx
-          image: nginx:latest
+        - name: website
+          image: ivowebsite:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 80
 
