@@ -8,4 +8,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /mnt/c/Users/2004m/Documents/static-website
+    path: /mnt/c/Users/2004m/static-website
